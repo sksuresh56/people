@@ -1,0 +1,31 @@
+<!-- 
+<table class="table">
+  <thead>
+    <tr>
+    <th>name</th>
+    <th>email</th>
+    <th>city</th>
+    <th>phone</th></tr>
+  </thead>
+  <tbody >
+<tr *ngFor="let people of peoples" >
+  <ng-container *ngIf="people.address.city!='Roscoeview'">
+
+    <td>{{people.name}}</td>
+    <td>{{people.email}}</td>
+    <td>{{people.address.city}}</td>
+    <td>{{people.phone}}</td>
+  </ng-container>
+</tr>
+  
+  </tbody>
+</table> -->
+
+<div class="card" style="width: 18rem;" *ngFor="let people of peoples">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{people.name}}</h5>
+      <p class="card-text">{{people.email}}</p>
+      <a href="#" class="btn btn-primary">{{people.phone}}</a>
+    </div>
+  </div>
